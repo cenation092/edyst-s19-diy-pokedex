@@ -8,6 +8,10 @@ app = Flask(__name__)
 @app.route('/api/pokemon/<int:num>')
 def index(num):
 	data = {}
+	if num > 807:
+		data['pokemon'] = "Missing"
+		json_data = json.dumps(data)
+		return json_data
 
 	URL = "https://pokeapi.co/api/v2/pokemon/"
 	URL = URL + str(num)
