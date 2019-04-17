@@ -10,7 +10,7 @@ This repo contains **API** that return the details about the pokémons of the re
  ## How to run the project
     
 * Run the app.py
-* Write this ( http://127.0.0.1:8006/api/pokemon/id )in you browser to get the details of required pokemon id in JSON format where `id` varies from `1 to 807` and here port is `8006` and route is `/api/pokemon/<int:id>`.
+* Write this ( http://127.0.0.1:8006/api/pokemon/id )in you browser to get the details of required pokemon id in JSON format where `id` varies from `1 to 807` and here **port** is `8006` and **route** is `/api/pokemon/<int:id>`.
 
 ## If run in postman:
 
