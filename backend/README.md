@@ -1,4 +1,4 @@
-This repo contains **API** that return the details about the pokémons of the required ID using flask framework.
+This repo contains **API** that return the details about the pokémons of the required **ID**.
 
  ## How to set up the project environemnt
 
