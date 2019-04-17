@@ -1,6 +1,6 @@
 This repo contains API that return the details about the pokémons of the required ID using flask framework.
 
-####Steps to run this API
+#### Steps to run this API
 
 	1. Clone this repo to your local machine using [this link](https://github.com/cenation092/edyst-s19-diy-pokedex.git).
 
