@@ -20,3 +20,7 @@ This repo contains **API** that return the details about the pokémons of the re
 * Hit following API http://127.0.0.1:8006/api/pokemon/id 
 
 ![image](https://user-images.githubusercontent.com/21224753/56210806-38631080-6074-11e9-94ce-a5bea59b0917.png)
+
+## To run script scraping automatically: 
+
+* Use [crontab](https://www.computerhope.com/unix/ucrontab.htm) scheduler.
