@@ -9,12 +9,12 @@ app = Flask(__name__)
 # Error handeler for invalid pokemon id
 @app.errorhandler(500)
 def page_not_found(e):
-    return render_template('404.html'), 404
+    return '<h1>204 Error No Content Found</h1>'
 
 # Error handeler for invalid route
 @app.errorhandler(404)
 def page_not_found(e):
-	return render_template('404.html'), 404
+	return '<h1>404 Error Invalid URL</h1>'
 
 # Routing for valid pokemon id , Example: http://127.0.0.1:8006/api/pokemon/1
 @app.route('/api/pokemon/<int:num>')
