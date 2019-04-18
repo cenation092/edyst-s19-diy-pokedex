@@ -3,7 +3,7 @@ This repo contains **API** that return the details about the pokémons of the re
  ## How to set up the project environemnt
 
 * [Clone](https://github.com/cenation092/edyst-s19-diy-pokedex.git) this repo in your local machine.
-* [Install](https://blog.ruanbekker.com/blog/2018/11/27/python-flask-tutorial-series-create-a-hello-world-app-p1/) python3 and flask. 
+* [Install](https://blog.ruanbekker.com/blog/2018/11/27/python-flask-tutorial-series-create-a-hello-world-app-p1/) python3. 
 * Setup [virtual environment](https://blog.ruanbekker.com/blog/2018/12/09/python-flask-tutorial-series-setup-a-python-virtual-environment-p2/) in backend folder.
 * Install all required packages mentioned in requirement.txt
 

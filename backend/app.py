@@ -13,33 +13,18 @@ def page_not_found(e):
 
 # Error handeler for invalid route
 @app.errorhandler(404)
-def page_not_found(e):
+def page_not_found_404(e):
 	return '<h1>404 Error Invalid URL</h1>'
 
 # Routing for valid pokemon id , Example: http://127.0.0.1:8006/api/pokemon/1
 @app.route('/api/pokemon/<int:num>')
 def index(num):
-	data = {} # dictonary for holding required pokemon data
-	URL = "https://pokeapi.co/api/v2/pokemon/" # external API to get data of required pokemon
-	URL = URL + str(num) # Add req Id of pokemon to the external API
-	response = requests.get(url = URL) # request for getting data of requred pokemon
-	responseData = response.json() # convert the data into JSON
-
-	# Extract useful information from data which is provide by the external API
-	data['id'] = responseData['id'] 
-	data['name'] = responseData['name']
-	data['sprite'] = responseData['sprites']['back_default']
-
-	# dictonary to hold whole pokemon
-	pokemon = {}
-	pokemon['pokemon'] = data
-
-	#convert whole data into JSON
-	json_data = json.dumps(pokemon)
-
-	#return required data 
-	return json_data
-
+	required_pokemon = {}
+	with open('pokemonData.json') as pokemonData: # open pokemonData.json file for extracting required pokemon data
+		pokemon_data_in_json = json.load(pokemonData) # read file data
+		required_pokemon['pokemon'] = pokemon_data_in_json[num-1] # extract required pokemon data
+		required_pokemon_in_json =  json.dumps(required_pokemon) # convert data in JSON
+		return required_pokemon_in_json 
 
 if __name__ == '__main__':
     app.run(port=8006)
