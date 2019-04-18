@@ -10,7 +10,7 @@ This repo contains **API** that return the details about the pokémons of the re
 
  ## How to run the project
     
-* Open terminal then cd edyst-s19-choose-a-pokemon⁩/backend  
+* Open terminal then `cd edyst-s19-choose-a-pokemon⁩/backend` 
 * Run command `python app.py` in your terminal.
 * Hit following API http://127.0.0.1:8006/api/pokemon/id in your browser to get the details of required pokemon id in JSON format where `id` varies from `1 to 151` and here **port** is `8006` and **route** is `/api/pokemon/<int:id>`.
 

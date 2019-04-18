@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import simplejson as json
 import requests
 
+# this script runs automatically at a period of 12 hours using crontab
+
 def scrape():
     # array to store all pokemon data
     pokemon_data = [] 
@@ -17,7 +19,7 @@ def scrape():
         current_pokemon_data['name'] = responseData['name']
         current_pokemon_data['sprite'] = responseData['sprites']['back_default']
 
-        #appent it to pokemon_data array
+        #append it to pokemon_data array
         pokemon_data.append(current_pokemon_data)
         i = i + 1
     # open file to store pokemon_data
